@@ -1,0 +1,24 @@
+# 依赖目录
+node_modules/
+
+# 打包输出目录
+dist/
+build/
+
+# 日志文件
+*.log
+
+# 环境变量文件
+.env
+
+# 编辑器和 IDE 生成的文件
+.idea/
+.vscode/
+.DS_Store
+
+# 测试报告和覆盖率文件
+coverage/
+test-results/
+
+# TypeScript 编译缓存
+*.tsbuildinfo

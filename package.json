@@ -1,0 +1,25 @@
+{
+  "name": "download_video",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "ts-node ./src/index.ts",
+    "start:static": "http-server ./static -p 8081",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "20.14.0",
+    "axios": "^1.8.4",
+    "cheerio": "^1.0.0",
+    "http-server": "^14.1.1",
+    "puppeteer": "^24.4.0",
+    "ts-node": "10.9.2",
+    "typescript": "5.8.2"
+  }
+}
