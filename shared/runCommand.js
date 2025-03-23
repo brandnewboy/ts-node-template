@@ -1,5 +1,6 @@
 import { spawn } from 'node:child_process'
 import path from 'node:path'
+import { getDirname } from './index.js'
 
 export const CONSOLE_COLOR = {
     DEFAULT: `\x1b[33m`,
@@ -11,7 +12,7 @@ export const CONSOLE_COLOR = {
 
 export function runCommandLocal(command, args, options) {
 
-    const commandPath = path.resolve(process.cwd(), '../node_modules/.bin/', command)
+    const commandPath = path.resolve(getDirname(import.meta.url), '../node_modules/.bin/', command)
 
     console.log(`You are running a command: ${commandPath}`, '\n')
 
