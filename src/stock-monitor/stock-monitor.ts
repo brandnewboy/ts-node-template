@@ -1,8 +1,7 @@
-// 假设使用Alpha Vantage API获取股票数据，需要替换为你自己的API密钥
+// 假设使用Alpha Vantage API获取股票数据，自己的API密钥
 const API_KEY = 'YOUR_API_KEY'
 const SYMBOL = 'AAPL' // 选择苹果公司的股票作为示例
 const CHANGE_THRESHOLD = 0.05 // 5%的变动阈值
-
 let previousPrice: number | null = null;
 
 async function getStockPrice() {
@@ -28,7 +27,6 @@ export async function monitorStock() {
             window.alert(`Stock price of ${SYMBOL} has changed by ${(change * 100).toFixed(2)}%!`)
         }
     }
-
     previousPrice = currentPrice
 }
 
