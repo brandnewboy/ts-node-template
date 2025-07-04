@@ -1,4 +1,4 @@
-import path from 'path'
+import * as path from 'node:path'
 import { downloadVideo } from './downloadVideo'
 
 const videoUrl = 'http://10.20.48.57:8081/cat.mp4'

@@ -7,7 +7,7 @@
   "scripts": {
     "start": "ts-node ./src/index.ts",
     "start:static": "http-server ./static -p 8081",
-    "build": "tsc",
+    "build": "tsc ./src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
